@@ -22,9 +22,6 @@ if (a != 0) or (x != 0) or ((10*a*a -51*a*x+5*x*x)!=0) :
         G = (3*(4*a*a +13*a*x+9*x*x))/(10*a*a -51*a*x+5*x*x)
         data1.append((x,a,G))
         listG.append(G)
-        my_file = open('laba7G.txt','w')
-        my_file.write(data1)
-        my_file.close()
         F = cos(6*a*a +a*x-2*x*x)
         data2.append((x,a,F))
         listF.append(F)
@@ -43,14 +40,23 @@ if (output == 'строка'):
         print(data1)
         print('Максимальное значение: {}'.format(max(list(elem)[2] for elem in data1)))
         print('Минимальное значение: {}'.format(min(list(elem)[2] for elem in data1)))
+        my_file=open('lab7.txt','w')
+        my_file.write(str(data1))
+        my_file.close()
     if (fun == 'F'):
         print(data2)
         print('Максимальное значение: {}'.format(max(list(elem)[2] for elem in data2)))
         print('Минимальное значение: {}'.format(min(list(elem)[2] for elem in data2)))
+        my_file=open('lab7.txt','w')
+        my_file.write(str(data2))
+        my_file.close()
     if (fun == 'Y'):
         print(data3)
         print('Максимальное значение: {}'.format(max(list(elem)[2] for elem in data3)))
         print('Минимальное значение: {}'.format(min(list(elem)[2] for elem in data3)))
+        my_file=open('lab7.txt','w')
+        my_file.write(str(data2))
+        my_file.close()
 elif (output == 'таблица'):
     q = 0
     if (fun == 'G'):
@@ -79,3 +85,4 @@ elif (fun == 'Y'):
     print('Кол-во совпалений: {}'.format(listY.count(shab)))
 else:
     print('ERORR')
+
