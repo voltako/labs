@@ -8,10 +8,10 @@ p=int(input("Введите сколько считать:"))
 h=float(input("Введите шаг:"))
 if (fun == 'G'):
     for i in range(p):
-        G = (3*(4*a*a +13*a*x+9*x*x))/(10*a*a -51*a*x+5*x*x)
         if (10*a*a-51*a*x+5*x*x) ==0:
             print('ERROR')
         else:
+            G = (3*(4*a*a +13*a*x+9*x*x))/(10*a*a -51*a*x+5*x*x)
             print(G)
             print()
             a+=h
