@@ -43,6 +43,9 @@ if (output == 'строка'):
         my_file=open('lab7.txt','w')
         my_file.write(str(data1))
         my_file.close()
+        data1.clear()
+        my_file=open('lab7.txt')
+        my_file.read()
     if (fun == 'F'):
         print(data2)
         print('Максимальное значение: {}'.format(max(list(elem)[2] for elem in data2)))
@@ -50,6 +53,9 @@ if (output == 'строка'):
         my_file=open('lab7.txt','w')
         my_file.write(str(data2))
         my_file.close()
+        data.clear()
+        my_file=open('lab7.txt')
+        my_file.read()
     if (fun == 'Y'):
         print(data3)
         print('Максимальное значение: {}'.format(max(list(elem)[2] for elem in data3)))
@@ -57,6 +63,9 @@ if (output == 'строка'):
         my_file=open('lab7.txt','w')
         my_file.write(str(data2))
         my_file.close()
+        data3.clear()
+        my_file=open('lab7.txt')
+        my_file.read()
 elif (output == 'таблица'):
     q = 0
     if (fun == 'G'):
